@@ -101,7 +101,7 @@ This command cannot be run in the context of bundle exec.
 Please run again without bundle exec.\033[0m
 }
       end
-      
+
       banner 'Preparing'
 
       calabash_server_dir = find_server_repo_or_raise
@@ -278,3 +278,6 @@ The server must be built from a tag/ branch.\033[0m
   end
 end
 
+# refactored raketasks
+require_relative 'lib/calabash-cucumber.rb'
+Dir['tasks/**/*.rb'].each { |file| require_relative file }

@@ -123,3 +123,19 @@ By using this software in any fashion, you are agreeing to be bound by
 the terms of this license. You must not remove this notice, or any other,
 from this software.
 ```
+
+
+## Release
+
+In order to have your changes available you need to:
+
+- Create a Pull Request that include below changes (or aggregate them with your changes)
+  - Bump the version in `calabash-cucumber/lib/calabash-cucumber/version.rb` (try to follow [semantic versioning](https://semver.org))
+  - Navigate to `calabash-cucumber/` folder
+  - Run `bundle` (which will regenerate the `Gemfile.lock`)
+- Get the Pull Request approved and merged.
+- Create and Publish the new tag based on the version by:
+  - Switching locally to `master` branch and pulling the update version that was merged above
+  - Run `bundle exec rake tags:create`.
+
+Now you will be able to update the needed tag in the repositories needing it.
