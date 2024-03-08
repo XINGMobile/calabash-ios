@@ -94,7 +94,7 @@ end
 def setup_project(project_name, project_path, path)
   ##Ensure exists and parse
   proj_file = "#{path}/project.pbxproj"
-  if not File.exists?(proj_file)
+  if not File.exist?(proj_file)
     msg("Error") do
       puts "Directory #{path} doesn't contain #{proj_file}"
     end

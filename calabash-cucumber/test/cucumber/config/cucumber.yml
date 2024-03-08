@@ -13,8 +13,8 @@ device_list = ['iphone5S', 'iphone4S', 'iphone6', 'iphone6plus', 'ipadmini']
 
 device_list.each do |device|
   dir = "#{calabash_dir}/devices/#{device}"
-  ip = IO.read("#{dir}/ip") if File.exists?("#{dir}/ip")
-  udid = IO.read("#{dir}/udid") if File.exists?("#{dir}/udid")
+  ip = IO.read("#{dir}/ip") if File.exist?("#{dir}/ip")
+  udid = IO.read("#{dir}/udid") if File.exist?("#{dir}/udid")
   ht = {:dir => dir,
         :ip => ip,
         :udid => udid}
