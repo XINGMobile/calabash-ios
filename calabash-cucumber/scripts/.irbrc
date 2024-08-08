@@ -1,6 +1,5 @@
 begin
   require "irb/completion"
-  require "irb/ext/save-history"
 rescue LoadError => e
   puts %Q[
 Caught a LoadError while requiring an irb module.
