@@ -55,28 +55,11 @@ Gem::Specification.new do |s|
   s.add_dependency 'geocoder'
   s.add_dependency 'httpclient'
   s.add_dependency 'run_loop', '>= 4.2', '< 5.0'
+  # FIXME: dependency of 'run_loop'
+  s.add_dependency 'mutex_m'
   s.add_dependency 'slowhandcuke'
 
   # Shared with run-loop.
   s.add_dependency 'awesome_print'
   s.add_dependency 'json'
-
-  s.add_development_dependency 'redcarpet'
-  s.add_development_dependency 'yard'
-
-  # Shared with run-loop.
-  s.add_development_dependency 'growl'
-  s.add_development_dependency 'guard-bundler'
-  s.add_development_dependency 'guard-rspec'
-  s.add_development_dependency 'listen'
-  s.add_development_dependency 'luffa' # Remove ASAP.
-  # Sometimes JSON.parse is failing to parse JSON dumped to a file.
-  s.add_development_dependency 'oj'
-  s.add_development_dependency 'pry'
-  s.add_development_dependency 'pry-nav'
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rb-readline'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rspec_junit_formatter'
-  s.add_development_dependency 'stub_env'
 end

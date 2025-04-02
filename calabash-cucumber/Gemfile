@@ -1,5 +1,23 @@
-source "https://rubygems.org"
+source 'https://newwork.jfrog.io/artifactory/api/gems/nwse-packages-gems'
 
 gemspec
 
-gem 'edn', git: 'https://github.com/XINGMobile/edn-ruby.git', tag: 'v1.1.2'
+gem 'edn'
+gem 'redcarpet'
+gem 'yard'
+
+# Shared with run-loop.
+gem 'growl'
+gem 'guard-bundler'
+gem 'guard-rspec'
+gem 'listen'
+gem 'luffa' # Remove ASAP.
+# Sometimes JSON.parse is failing to parse JSON dumped to a file.
+gem 'oj'
+gem 'pry'
+gem 'pry-nav'
+gem 'rake'
+gem 'rb-readline'
+gem 'rspec'
+gem 'rspec_junit_formatter'
+gem 'stub_env'
