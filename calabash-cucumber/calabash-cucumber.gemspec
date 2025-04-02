@@ -46,6 +46,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'clipboard'
   s.add_dependency 'cucumber'
+  s.add_dependency 'edn'
   s.add_dependency 'geocoder'
   s.add_dependency 'httpclient'
   s.add_dependency 'run_loop', '>= 4.2', '< 5.0'

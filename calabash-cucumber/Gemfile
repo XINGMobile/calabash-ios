@@ -2,7 +2,6 @@ source 'https://newwork.jfrog.io/artifactory/api/gems/nwse-packages-gems'
 
 gemspec
 
-gem 'edn'
 gem 'redcarpet'
 gem 'yard'
 
