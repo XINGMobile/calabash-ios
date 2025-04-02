@@ -127,6 +127,12 @@ from this software.
 
 ## Release
 
+### Release Gem
+
+Follow [Build and Release a gem on JFROG](https://fantastic-couscous-zwrnp14.pages.github.io/getting-started/configurations/jfrog-ruby#) Documentation
+
+### (Legacy) Release Tag
+
 In order to have your changes available you need to:
 
 - Create a Pull Request that include below changes (or aggregate them with your changes)

@@ -11,12 +11,6 @@ additional_bin_files = %w(bin/cal.xcconfig bin/CalabashSetup bin/calabash-ios)
 # bin help file
 bin_help = %w(doc/calabash-ios-help.txt)
 
-# the calabash framework
-staticlib = %w(staticlib/calabash.framework.zip)
-
-# calabash dylibs
-dylibs = %w(dylibs/libCalabashARM.dylib dylibs/libCalabashSim.dylib)
-
 # files in script
 scripts = %w(scripts/.irbrc)
 
@@ -31,7 +25,7 @@ features_skeleton = Dir.glob('features-skeleton/**/*.*')
 
 license = %w(LICENSE)
 
-gem_files = ruby_files + additional_bin_files + bin_help + staticlib + scripts + scripts_data + features + features_skeleton + license + dylibs
+gem_files = ruby_files + additional_bin_files + bin_help + scripts + scripts_data + features + features_skeleton + license
 
 Gem::Specification.new do |s|
   s.name        = 'calabash-cucumber'
