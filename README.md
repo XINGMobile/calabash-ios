@@ -129,7 +129,7 @@ from this software.
 
 ### Release Gem
 
-Follow [Build and Release a gem on JFROG](https://fantastic-couscous-zwrnp14.pages.github.io/getting-started/configurations/jfrog-ruby#) Documentation
+Follow [Configure JFROG for Ruby](https://fantastic-couscous-zwrnp14.pages.github.io/getting-started/configurations/jfrog-ruby#) Documentation.
 
 ### (Legacy) Release Tag
 
